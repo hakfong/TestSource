@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_label setText:_strDes];
+    
     // Do any additional setup after loading the view from its nib.
 }
 

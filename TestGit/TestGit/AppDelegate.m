@@ -7,12 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "TestViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    
     // Override point for customization after application launch.
+    
+    TestViewController *test = [[TestViewController alloc]     initWithNibName:@"TestViewController" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc]  initWithRootViewController:test];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

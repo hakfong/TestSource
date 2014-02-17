@@ -7,7 +7,7 @@
 //
 
 #import "TestViewController.h"
-
+#import "SecondViewController.h"
 @interface TestViewController ()
 
 @end
@@ -26,6 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    self.title = @"First View Controller";
+    SecondViewController* secondVC = [[SecondViewController alloc]init];
+    secondVC.strDes = @"Test";
+    [self.navigationController pushViewController:secondVC animated:YES];
     // Do any additional setup after loading the view from its nib.
 }
 

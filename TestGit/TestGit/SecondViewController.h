@@ -9,5 +9,7 @@
 #import "ViewController.h"
 
 @interface SecondViewController : ViewController
+@property(strong,nonatomic)NSString *strDes;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
