@@ -1,5 +1,5 @@
 //
-//  Student.h
+//  Classes.h
 //  TestGit
 //
 //  Created by Mapring on 2/17/14.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Student : NSObject
+@interface Classes : NSObject
 
 @end
